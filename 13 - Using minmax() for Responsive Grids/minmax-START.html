@@ -21,7 +21,10 @@
       display: grid;
       grid-gap: 20px;
       border: 10px solid var(--yellow);
-      grid-template-columns: repeat(auto-fill, 150px);
+      /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
+      /* grid-template-columns: auto 150px 150px 150px; first item fills up remaining space */
+      grid-template-columns: fit-content(150px) 150px 150px 150px;  /* fit content into 150px
+     */
     }
   </style>
 </body>
