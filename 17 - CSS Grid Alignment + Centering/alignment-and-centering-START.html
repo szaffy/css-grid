@@ -70,7 +70,17 @@
     .container {
       display: grid;
       grid-gap: 20px;
-      grid-template-columns: repeat(10, 1fr);
+      border: 10px solid var(--yellow);
+      grid-template-columns: repeat(5, 100px);
+      grid-template-rows: repeat(5, 100px);
+      /* justify-items: center; */ /* item is only as white as it needs to be  CHECK CSStricks site for more*/
+      /* align-items: center; */
+      place-items: stretch stretch;
+      justify-content: space-between;
+    }
+
+    .itm {
+      background: white;
     }
   </style>
 </body>
