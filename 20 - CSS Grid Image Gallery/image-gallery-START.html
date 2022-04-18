@@ -204,6 +204,10 @@
     handleClick));
 
     overlayClose.addEventListener('click', close);
+    overlay.addEventListener('click', function(e){
+      if(e.target != overlayImage) {
+        close();
+      }}) 
     
   </script>
 </body>
