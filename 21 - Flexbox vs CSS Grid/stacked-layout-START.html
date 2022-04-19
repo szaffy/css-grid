@@ -19,12 +19,18 @@
   </div>
 
   <style>
-    .stacked {}
+    .stacked {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
 
     .stacked>* {
       width: 30%;
-      margin-bottom: 20px;
+      margin-bottom: 20px; /* flrxbox gap is in working status */
     }
+    /* only doable in flexbox? u can not have rows with different column sizes */
+
   </style>
 </body>
 
